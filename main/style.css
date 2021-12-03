@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap");
+
+:root {
+  /* Primary */
+  --cyan-prim: hsl(172, 67%, 45%);
+  /* Neutral */
+  --cyan-neu-10: hsl(183, 100%, 15%);
+  --cyan-neu-8: hsl(186, 14%, 43%);
+  --cyan-neu-6: hsl(184, 14%, 56%);
+  --cyan-neu-4: hsl(185, 41%, 84%);
+  --cyan-neu-2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--cyan-neu-4);
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  padding: 1.7rem 0 2.3rem 0;
+}
+
+.tip-calculator {
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--cyan-neu-8);
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 5px;
+  padding-right: 18px;
+  text-align: right;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--cyan-neu-10);
+  background: var(--cyan-neu-2) 17px no-repeat;
+  background: var(--cyan-neu-4) 17px no-repeat;
+}
+
+.bill-input {
+  background-image: url("../images/icon-dollar.svg");
+  margin-bottom: 36px;
+}
+
+.tip {
+  margin-top: 0.7rem;
+  margin-bottom: 2rem;
+
+  display: grid;
+  grid-template-columns: 144px 144px;
+  row-gap: 2em;
+  column-gap: 18px;
+}
+
+.tips {
+  background-color: var(--cyan-neu-10);
+  color: var(--white);
+  border-radius: 4px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-tip {
+  font-weight: 700;
+  background-color: var(--cyan-prim);
+  color: var(--cyan-neu-10);
+}
+
+.tip-custom {
+  height: 48px;
+  display: inline;
+}
+
+.people-input {
+  background-image: url("../images/icon-person.svg");
+  margin-bottom: 2.4rem;
+}
+
+.result {
+  background-color: var(--cyan-neu-10);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 39px 21px 21px 21px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
