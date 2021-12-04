@@ -44,6 +44,7 @@ body {
 }
 
 .tip-calculator {
+  /* max-width: 100%; */
   background-color: var(--white);
   border-radius: 1.4rem;
 
@@ -53,6 +54,7 @@ body {
 }
 
 label {
+  font-size: 1.25rem;
   color: var(--cyan-neu-8);
   display: block;
   font-weight: 700;
@@ -93,13 +95,13 @@ input::-webkit-inner-spin-button {
   background-image: url("../images/icon-dollar.svg");
 }
 
-.tip {
+.tips {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.tips {
+.tip {
   background-color: var(--cyan-neu-10);
   color: var(--white);
   border-radius: 4px;
@@ -109,9 +111,10 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 
-.tips:hover {
+.tip:hover:not(.active-tip) {
   background-color: var(--cyan-neu-4);
   /* background-color: var(--cyan-prim); */
   color: var(--cyan-neu-10);
@@ -146,6 +149,13 @@ input::-webkit-inner-spin-button {
 
 .error {
   color: var(--red);
+  font-weight: 700;
+  opacity: 0;
+}
+
+.show-error-msg {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
 }
 
 .result {
@@ -156,6 +166,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s;
 }
 
 .tip-amount,
@@ -223,15 +234,16 @@ input::-webkit-inner-spin-button {
     gap: 2rem;
     border-radius: 1.4rem;
   }
-  .tip {
+  .tips {
     grid-template-columns: repeat(3, 117px);
     row-gap: 1.2em;
     column-gap: 17px;
   }
 
   .result {
-    height: 25rem;
-    aspect-ratio: 1;
+    width: 25rem;
+    /* aspect-ratio: 1; */
+    height: 100%;
   }
 
   .amount {

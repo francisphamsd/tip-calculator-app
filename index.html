@@ -27,28 +27,28 @@
           type="number"
           class="input bill-input margin-bottom"
           id="bill-input"
-          placeholder="0"
+          placeholder="0.00"
         />
         <label for="">Select Tip %</label>
-        <div class="tip margin-bottom">
-          <div class="tips tip-5">5%</div>
-          <div class="tips tip-10">10%</div>
-          <div class="tips tip-15 active-tip">15%</div>
-          <div class="tips tip-25">20%</div>
-          <div class="tips tip-50">50%</div>
-          <div id="tip-custom">
-            <input type="number" class="tip-custom" placeholder="Custom" />
+        <div class="tips margin-bottom">
+          <div class="tip">10%</div>
+          <div class="tip active-tip">15%</div>
+          <div class="tip">18%</div>
+          <div class="tip">25%</div>
+          <div class="tip">50%</div>
+          <div>
+            <input type="number" class="tip-custom" id="tip-custom" placeholder="Custom" />
           </div>
         </div>
         <div class="peopleLabel">
           <label for="">Number of People</label>
-          <label for="" class="error">Can't be zero</label>
+          <label class="error">Zero or negative error</label>
         </div>
         <input
           type="number"
           class="input people-input"
           id="people-input"
-          placeholder="0"
+          placeholder="1"
         />
       </div>
 
@@ -59,14 +59,14 @@
               <label class="text"for" ="">Tip Amount</label>
               <p class="person">/ person</p>
             </div>
-            <div class="amount" id="tip-amount">$4.27</div>
+            <div class="amount">$0.00</div>
           </div>
           <div class="total">
             <div>
               <label class="text" for" ="">Total</label>
               <p class="person">/ person</p>
             </div>
-            <div class="amount" id="tip-total">$32.79</div>
+            <div class="amount">$00.00</div>
           </div>
         </div>
 
