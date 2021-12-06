@@ -2,83 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
     <link rel="stylesheet" href="./main/style.css" />
-
-    <title>Frontend Mentor | Tip calculator app</title>
+    <title>Document</title>
   </head>
   <body>
-    <div class="logo">
-      <img src="./images/logo.svg" alt="tip calculator logo" />
-    </div>
-
-    <div class="tip-calculator main-padding">
-      <div class="partOne sub-padding">
-        <label for="">Bill</label>
-        <input
-          type="number"
-          class="input bill-input margin-bottom"
-          id="bill-input"
-          placeholder="0.00"
-        />
-        <label for="">Select Tip %</label>
-        <div class="tips margin-bottom">
-          <div class="tip">10%</div>
-          <div class="tip active-tip">15%</div>
-          <div class="tip">18%</div>
-          <div class="tip">25%</div>
-          <div class="tip">50%</div>
-          <div>
-            <input type="number" class="tip-custom" id="tip-custom" placeholder="Custom" />
+    <img src="./images/logo.svg" alt="logo" class="logo" />
+    <div class="container main-padding">
+      <div class="bill-info main-margin">
+        <div>
+          <label for="">Bill</label>
+          <input
+            class="bill-input"
+            id="bill-input"
+            type="number"
+            placeholder="0.00"
+          />
+        </div>
+        <div>
+          <label for="">Select Tip %</label>
+          <div class="tip-percent">
+            <button class="tip">10%</button>
+            <button class="tip active-tip">15%</button>
+            <button class="tip">18%</button>
+            <button class="tip">25%</button>
+            <button class="tip">50%</button>
+            <input
+              class="custom-input"
+              id="custom-input"
+              type="number"
+              placeholder="Custom"
+            />
           </div>
         </div>
-        <div class="peopleLabel">
-          <label for="">Number of People</label>
-          <label class="error">Zero or negative error</label>
+        <div>
+          <div class="people-info">
+            <label class="error" for="">Invalid value</label>
+            <label for="">People</label>
+          </div>
+          <input
+            class="people-input"
+            id="people-input"
+            type="number"
+            placeholder="1"
+          />
         </div>
-        <input
-          type="number"
-          class="input people-input"
-          id="people-input"
-          placeholder="1"
-        />
       </div>
-
-      <div class="result main-padding">
-        <div class="text-amount">
-          <div class="tip-amount">
+      <div class="result">
+        <div class="result-info">
+          <div class="amount">
             <div>
-              <label class="text"for" ="">Tip Amount</label>
-              <p class="person">/ person</p>
+              <label class="result-label" for="">Tip Amount</label>
+              <p>/ person</p>
             </div>
-            <div class="amount">$0.00</div>
+            <span class="dollar">$0.00</span>
           </div>
+
+          <div class="portion">
+            <div>
+              <label class="result-label" for="">Portion</label>
+              <p>/ person</p>
+            </div>
+            <span class="dollar">$0.00</span>
+          </div>
+
           <div class="total">
             <div>
-              <label class="text" for" ="">Total</label>
-              <p class="person">/ person</p>
+              <label class="result-label" for="">Total</label>
+              <p>check</p>
             </div>
-            <div class="amount">$00.00</div>
+            <span class="dollar">$0.00</span>
           </div>
         </div>
-
-        <div class="reset">Reset</div>
+        <button class="reset-button">Reset</button>
       </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Frank Pham</a>.
     </div>
 
     <script src="./main/script.js"></script>

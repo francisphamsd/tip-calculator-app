@@ -21,6 +21,21 @@ The designs were created to the following widths:
 /_ Accent _/
 --red: hsl(14, 45%, 57%);
 
+## New Color Set
+
+/_ Primary _/
+--cyan-prim: hsl(187, 69%, 55%);
+
+/_ Neutral _/
+--cyan-neu-9: hsl(189, 85%, 28%);
+--cyan-neu-7: hsl(188, 83%, 37%);
+--cyan-neu-3: hsl(187, 74%, 65%);
+--cyan-neu-1: hsl(185, 84%, 88%);
+--white: hsl(0, 0%, 100%);
+
+/_ Accent _/
+--red-accent: hsl(6, 71%, 50%);
+
 ## Typography
 
 ### Body Copy
