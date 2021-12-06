@@ -5,6 +5,7 @@ Released date 12/04/2021
 Basic tip calculator app with simple function, design from Frontend Mentor.
 
 V2:
+Live view: https://francisphamsd.github.io/tip-calculator-app/
 Released date 12/06/2021
 This is the improved tip calculator app with many new features build up from scratch from the ground up:
 
