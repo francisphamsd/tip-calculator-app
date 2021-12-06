@@ -9,18 +9,17 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
-
-- Strong cyan: hsl(172, 67%, 45%)
-
-### Neutral
-
-- Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Dark grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Light grayish cyan: hsl(189, 41%, 97%)
-- White: hsl(0, 0%, 100%)
+/_ Primary _/
+--cyan-prim: hsl(172, 67%, 45%);
+/_ Neutral _/
+--cyan-neu-10: hsl(183, 100%, 15%);
+--cyan-neu-8: hsl(186, 14%, 43%);
+--cyan-neu-6: hsl(184, 14%, 56%);
+--cyan-neu-4: hsl(185, 41%, 84%);
+--cyan-neu-2: hsl(189, 41%, 97%);
+--white: hsl(0, 0%, 100%);
+/_ Accent _/
+--red: hsl(14, 45%, 57%);
 
 ## Typography
 
